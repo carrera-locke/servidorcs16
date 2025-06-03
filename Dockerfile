@@ -17,7 +17,7 @@ RUN ./steamcmd.sh +force_install_dir $HLDS_DIR \
     +quit
 
 # Copiamos el archivo .tar que contiene metamod.so y el link simbólico directo
-COPY metamod.tar /tmp/metamod.tar
+COPY metamod.tar /tmp/metamod.tar.gz
 
 # Descomprimimos directamente dentro de la ruta de destino
 RUN mkdir -p $HLDS_DIR/cstrike/addons/metamod/dlls && \

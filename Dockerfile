@@ -22,7 +22,7 @@ RUN ./steamcmd.sh +force_install_dir $HLDS_DIR \
 COPY metamod/ $HLDS_DIR/cstrike/addons/metamod/
 
 # Activamos Metamod en liblist.gam
-RUN echo "linux addons/metamod/dlls/metamod.so" > $HLDS_DIR/cstrike/liblist.gam
+RUN echo "linux addons/metamod/dlls/metamod_i386.so" > $HLDS_DIR/cstrike/liblist.gam
 
 WORKDIR $HLDS_DIR
 
